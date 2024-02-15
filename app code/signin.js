@@ -3,10 +3,9 @@ import Linking from 'react-native';
 async function SignIn() {
     const state = 'fK48ajhqk6kxBjhcCR4psygqmtrXBGA2voWH18uxSIbqm4suMM' //not the state I'm using in my app fyi
     const clientId = ''
-    const redirectUri = 'https://www.google.com'
     const allowSignup = true
 
-    const url=`https://github.com/login/oauth/authorize?client_id='${clientId}'&redirect_uri='${redirectUri}'&state='${state}'&allow_signup='${allowSignup}'`
+    const url=`https://github.com/login/oauth/authorize?client_id='${clientId}'&state='${state}'&allow_signup='${allowSignup}'`
 
     await Linking.openURL(url);
 }
