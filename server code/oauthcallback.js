@@ -13,7 +13,7 @@ router.get('/oauthcallback', async (req, res) => {
     if(data.state == state) {
       axios.post("https://github.com/login/oauth/access_token", {client_id, client_secret, code: data.code})
       .then(response => {
-        res.redirect('appschema://access_token=' + response.data.access_token)
+        res.redirect('appschema://login?access_token=' + response.data.access_token)
       })
 
     }

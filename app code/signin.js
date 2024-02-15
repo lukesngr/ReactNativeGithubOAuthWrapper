@@ -1,6 +1,6 @@
 import Linking from 'react-native';
 
-async function SignIn() {
+export async function SignIn() {
     const state = 'fK48ajhqk6kxBjhcCR4psygqmtrXBGA2voWH18uxSIbqm4suMM' //not the state I'm using in my app fyi
     const clientId = ''
     const allowSignup = true
@@ -9,5 +9,3 @@ async function SignIn() {
 
     await Linking.openURL(url);
 }
-
-module.exports = SignIn;
