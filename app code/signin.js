@@ -1,7 +1,7 @@
 import Linking from 'react-native';
 
 async function SignIn() {
-    const state = `fK48ajhqk6kxBjhcCR4psygqmtrXBGA2voWH18uxSIbqm4suMM`
+    const state = 'fK48ajhqk6kxBjhcCR4psygqmtrXBGA2voWH18uxSIbqm4suMM' //not the state I'm using in my app fyi
     const clientId = ''
     const redirectUri = 'https://www.google.com'
     const allowSignup = true
